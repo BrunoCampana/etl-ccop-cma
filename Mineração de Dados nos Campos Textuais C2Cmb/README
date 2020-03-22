@@ -1,0 +1,16 @@
+O script migracao.py foi escrito na linguagem python e tem o objetivo de acessar o banco de dados do C2 Cmb e gerar um arquivo formatado com informações relevantes para a tomada de decisão.
+
+Para sua utilização, são necessárias as seguintes bibliotecas:
+
+- pandas
+- psycopg2
+
+Antes de executar o script, é necessário configurar o IP, porta, usuário e senha para acessar o Banco de dados. Para isso, basta alterar os nomes que estão entre aspas no exemplo abaixo para os parâmetros reais, no próprio script.
+
+conn = psycopg2.connect(dbname="nomedobancodedados", port="numerodaporta", user="nomedousuario", password='senhadeacesso', host="IP.do.banco.dedados")
+
+Para executá-lo, basta no terminal acessar o diretório onde está localizado o script e digitar:
+
+python script.py
+
+Se a execução for bem sucedida, um arquivo .xlsx foi gerado no mesmo diretório do script com as informações organizadas.
